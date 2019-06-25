@@ -1,0 +1,66 @@
+
+    <head>
+        <title>Smash Tag Generator</title>
+
+        <style type="text/css">
+        
+        html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
+        #td_wrap { vertical-align: middle; text-align: center; }
+        #test p {
+            margin-top: 25px;
+            font-size: 21px;
+            text-align: center;
+            animation: fadein 5s;
+            -moz-animation: fadein 5s; /* Firefox */
+            -webkit-animation: fadein 5s; /* Safari and Chrome */
+            -o-animation: fadein 5s; /* Opera */
+        }
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        </style>
+    </head>
+
+    <body bgcolor="black" onclick='window.location.href=document.URL'>
+        <table id="tbl_wrap"><tbody><tr><td id="td_wrap">
+        <!-- START: Anything between these wrapper comment lines will be centered -->
+
+
+        <div id="test" style="border: 1px solid black; display: inline-block;font-size:160px;font-family:verdana;">
+        <font color="white"><b>{{curTag}}</b></font>
+        </div>
+
+        <!-- END: Anything between these wrapper comment lines will be centered -->
+        </td></tr></tbody></table>
+        
+    </body>
