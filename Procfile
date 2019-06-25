@@ -1,1 +1,1 @@
-web: gunicorn smashtags.wsgi --log-file -
+web: gunicorn smashtags.wsgi --log-file smashtags:app
